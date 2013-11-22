@@ -15,6 +15,11 @@
 @ColorBase:#027f81;
 @base:980px;
 
+a:active, a:hover, a:-webkit-any-link, a:-webkit-any-link:active {
+	color:@ColorBase;
+}
+.azul-aqua{color: @ColorBase;}
+
 /* !Header */ 
 header{
 	@media only screen and (min-width: @mobile){
@@ -40,6 +45,7 @@ header{
 	}
 }
 
+/* !Contenido */
 #container {
 	@media only screen and (min-width: @desktop){
 		max-width:752px;
@@ -53,9 +59,27 @@ header{
 	}
 }
 
-/* !Contenido */
 #ranimg {
 	@media only screen and (min-width: @BigScreen){
 		min-height:600px;
+	}
+}
+
+/* !Error 404 */
+.box {
+	@media only screen and (min-width: @base){
+		height: 315px;
+	}
+	@media only screen and (min-width: @BigScreen){
+		height: 372px;
+		
+	}
+}
+.cover_pan{
+	@media only screen and (min-width: @base){
+		height: 327px;
+	}
+	@media only screen and (min-width: @BigScreen){
+		height: 384px;
 	}
 }
