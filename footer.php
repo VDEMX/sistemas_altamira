@@ -1,7 +1,6 @@
 <footer id="footer">
-	<section id="foot" class="hide">
-		<h2>Oficinas generales</h2>
-		<adress>Morelos 905 Sur, 67350 Allende, N.L., México. Teléfono: <strong>Conmutador</strong> 01(826)2680 800, <strong>Ventas:</strong> 01(826) 2680 801, <strong>Fax:</strong>01(826)268-3366 <strong>Fax sin costo:</strong> 01-800-71BOMBA(71-26622) y 01-800-832-6600</adress>
+	<section id="foot">
+		<a href="/inicio">inicio</a> | <a href="/nosotros">La empresa</a> | <a href="/novedades">Nuevos productos</a> | <a href="/contacto">Contacto</a>
 	</section>
 	<small><?php echo "$sitio"?> ® 1992 - <?php echo date("Y");?>. Todos los derechos reservados.</small>
 </footer>
