@@ -24,43 +24,6 @@ function inicio ()
         responseDiv : '#respuesta',
         allBrowsers: true,  
     }); 
-    //pestañas
-   $(".tab").click(function tabs(){
-   //quitar la clase .active a la pestaña que la tenga:
-      $(".active").removeClass("active");
-   //agregar la clase .active la pestaña que hicimos click:
-   $(this).addClass("active");
-   });
-    $('.sec-1').click(
-      function()
-      {
-            window.location = '/aviso-nov-2012';
-      }
-   );
-   $('.sec-2').click(
-      function()
-      {
-            window.location = '/aviso-nov-2012#sec-2';
-      }
-   );
-   $('.sec-02').click(
-      function()
-      {
-            window.location = '/aviso-nov-2012#sec-02';
-      }
-   );
-   $('.sec-6').click(
-      function()
-      {
-            window.location = '/aviso-nov-2012#sec-6';
-      }
-   );
-   $('.sec-8').click(
-      function()
-      {
-            window.location = '/aviso-nov-2012#sec-8';
-      }
-   );
 }
 
 if((navigator.userAgent.match(/iPhone/i)) || (navigator.userAgent.match(/iPod/i)))
