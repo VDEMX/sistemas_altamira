@@ -5,16 +5,6 @@ function inicio ()
 	$('.flexslider').flexslider({
 		animation: "slide"
 	});
-	//botones para el iframe
-	$(".boton").click(function toggle(){
-		//quitar la clase .active al boton que la tenga:
-		$(".active").removeClass("active");
-		//agregar la clase .active al boton al que hicimos click:
-		$(this).addClass("active");
-		//esconder el mapa
-		$("#ranimg, #Table_01, #map, #productos-nuevos, #contacto, #acercade, #fotovoltaicos, #ax, #federatas").hide();
-		$("iframe").show();
-	});
 	//acordión del menú táctil
 	$('ul').accordion();
 	//formulario de contacto
@@ -24,6 +14,12 @@ function inicio ()
         responseDiv : '#respuesta',
         allBrowsers: true,  
     }); 
+     //Simular el evento hover al hacer click en pantallas táctiles
+    var myLinks = document.getElementsByTagName('a');
+	for(var i = 0; i < myLinks.length; i++){
+	   myLinks[i].addEventListener('touchstart', function(){this.className = "hover";}, false);
+	   myLinks[i].addEventListener('touchend', function(){this.className = "";}, false);
+	}
 }
 
 if((navigator.userAgent.match(/iPhone/i)) || (navigator.userAgent.match(/iPod/i)))
@@ -66,9 +62,3 @@ if(("standalone" in window.navigator) && window.navigator.standalone){
 // bloquear el zoom en iOS
 MBP.scaleFix();
 }
-
-// Respond.js
-yepnope({
-	test : Modernizr.mq('(only all)'),
-	nope : ['js/respond.min.js']
-});
