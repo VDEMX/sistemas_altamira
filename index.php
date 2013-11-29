@@ -1,5 +1,5 @@
 <?php $active_page="Inicio"; ?>
-<?php include("head.php"); ?>
+<?php include("includes/head.php"); ?>
  		<title><?php echo "$sitio"?></title>
  		<meta name="description" content="Empresa fundada en 1992, dedicada a diseñar, producir y distribuir al mayoreo equipos de alta calidad con tecnología de punta para el manejo de agua.">
  		<meta name="keywords" content="<?php echo "$nombre"?>, bombas para agua, equipos de bombeo, presurizadores, equipos hidroneumaticos, tanques, motores sumergibles, bombas sumergibles para pozo, bombas, bombas para achique, bombas para lodos, bombas trituradoras, sistemas de bombeo, bombas sumergibles para aguas residuales, bombas para albercas, bombas de uso domestico, bombas para hidromasaje ">
@@ -8,7 +8,7 @@
 
 <body>
   	<section id="container">
- 		<?php include("header.php"); ?>
+ 		<?php include("includes/header.php"); ?>
  		<section id="ranimg" class="content">
  			<!-- slider -->
 			<div class="flexslider">
@@ -23,4 +23,4 @@
 			</div>
 			</section>
  	
-<?php include("footer.php"); ?>
+<?php include("includes/footer.php"); ?>

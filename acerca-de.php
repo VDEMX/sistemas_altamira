@@ -1,5 +1,5 @@
 <?php $active_page="nosotros"; ?>
-<?php include("head.php"); ?>
+<?php include("includes/head.php"); ?>
  		<title>Acerca de <?php echo "$nombre"?></title>
  		<meta name="description" content="Empresa 100% Mexicana que fue fundada en 1992 y su giro consiste en diseñar, producir y distribuir al mayoreo sistemas y equipos de alta calidad y tecnología de punta para el manejo del agua. Tiene cobertura nacional con Distribuidores en las principales ciudades del país y Centros de Apoyo a Distribuidores.">
 		<meta name="keywords" content="empresa,Mexicana ,dedicada,diseñar, producir,distribuir,mayoreo, sistemas,equipos,alta calidad,agua, presencia, nacional, republica, tecnología, México">
@@ -8,7 +8,7 @@
  	
 <body>
  	<section id="container">
-	 	<?php include("header.php"); ?>
+	 	<?php include("includes/header.php"); ?>
 	 	<section id="acercade" class="content active">
 	 		<h2 class="titulo">Acerca de <?php echo "$nombre"?></h2>
 	 		<p>Empresa 100% Mexicana que fue fundada en 1992 y su giro consiste en diseñar, producir y distribuir al mayoreo, sistemas y equipos de alta calidad y tecnología de punta para el manejo del agua. Tiene cobertura nacional con Distribuidores en las principales ciudades del país y Centros de Apoyo a Distribuidores.
@@ -49,4 +49,4 @@
 	</section>
  	
 
-<?php include("footer.php"); ?>
+<?php include("includes/footer.php"); ?>

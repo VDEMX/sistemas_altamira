@@ -45,44 +45,14 @@ header{
 	}
 }
 
-/* !Contenido */
-#container {
-	@media only screen and (min-width: @desktop){
-		max-width:752px;
-		margin: 0 auto;
-	}
-	@media only screen and (min-width: @base){
-		max-width:948px;
-	}
-	@media only screen and (min-width: @BigScreen){
-		max-width:1108px;
-	}
-}
-
 #ranimg {
+	@media only screen and (min-width: @tablet){
+		min-height: 430px;
+	}
 	@media only screen and (min-width: @base){
-		min-height:525px;
+		min-height: 535px;
 	}
 	@media only screen and (min-width: @BigScreen){
 		min-height:600px;
-	}
-}
-
-/* !Error 404 */
-.box {
-	@media only screen and (min-width: @base){
-		height: 315px;
-	}
-	@media only screen and (min-width: @BigScreen){
-		height: 372px;
-		
-	}
-}
-.cover_pan{
-	@media only screen and (min-width: @base){
-		height: 327px;
-	}
-	@media only screen and (min-width: @BigScreen){
-		height: 384px;
 	}
 }

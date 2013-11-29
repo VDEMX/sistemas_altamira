@@ -1,5 +1,5 @@
 <?php $active_page="productos"; ?>
-<?php include("head.php"); ?>
+<?php include("includes/head.php"); ?>
  		<title><?php echo "$sitio"?> | Serie PRO-XL</title>
  		<meta name="description" content="TANQUES PRECARGADOS PARA SISTEMAS HIDRONEUMÁTICOS">
 		<meta name="keywords" content="TANQUES, PRECARGADOS, SISTEMAS, HIDRONEUMÁTICOS">
@@ -9,7 +9,7 @@
  <body>
  <section id="container">
  
- 	<?php include("header.php"); ?>
+ 	<?php include("includes/header.php"); ?>
  	
  	<section id="ax" class="active">
  	<div class="cien">
@@ -86,4 +86,4 @@
 		<div class="clear"></div>
 	</section>
  	
- 	<?php include("footer.php"); ?>
+ 	<?php include("includes/footer.php"); ?>
